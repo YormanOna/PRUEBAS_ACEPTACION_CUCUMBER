@@ -1,0 +1,192 @@
+[
+  {
+    "uri": "Requisito5.feature",
+    "id": "panel-de-administraci\u00f3n",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Panel de administraci\u00f3n",
+    "description": "",
+    "elements": [
+      {
+        "id": "ver-el-gestor-de-cocteles",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ver el gestor de cocteles",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "navego al panel de administraci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.822600603103638
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "selecciono la pesta\u00f1a de cocteles",
+            "result": {
+              "status": "passed",
+              "duration": 0.2705974578857422
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 6,
+            "name": "deber\u00eda ver el gestor de cocteles",
+            "result": {
+              "status": "passed",
+              "duration": 2.3382680416107178
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-un-nuevo-coctel",
+        "line": 8,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar un nuevo coctel",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 9,
+            "name": "navego al panel de administraci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.7200846672058105
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 10,
+            "name": "selecciono la pesta\u00f1a de cocteles",
+            "result": {
+              "status": "passed",
+              "duration": 0.25423598289489746
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 11,
+            "name": "agrego un nuevo coctel",
+            "result": {
+              "status": "failed",
+              "duration": 0.7465004920959473
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 12,
+            "name": "deber\u00eda ver el nuevo coctel en la lista",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "eliminar-un-coctel",
+        "line": 14,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar un coctel",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 15,
+            "name": "navego al panel de administraci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.877546548843384
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 16,
+            "name": "selecciono la pesta\u00f1a de cocteles",
+            "result": {
+              "status": "passed",
+              "duration": 0.2656841278076172
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 17,
+            "name": "elimino un coctel",
+            "result": {
+              "status": "passed",
+              "duration": 0.7768473625183105
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 18,
+            "name": "deber\u00eda ver el coctel eliminado de la lista",
+            "result": {
+              "status": "failed",
+              "duration": 2.3167128562927246
+            }
+          }
+        ]
+      },
+      {
+        "id": "ver-el-gestor-de-paquetes",
+        "line": 20,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ver el gestor de paquetes",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 21,
+            "name": "navego al panel de administraci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 5.56755805015564
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 22,
+            "name": "selecciono la pesta\u00f1a de paquetes",
+            "result": {
+              "status": "passed",
+              "duration": 0.30643439292907715
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "deber\u00eda ver el gestor de paquetes",
+            "result": {
+              "status": "failed",
+              "duration": 22.600491762161255
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

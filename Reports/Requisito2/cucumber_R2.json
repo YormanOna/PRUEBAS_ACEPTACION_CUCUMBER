@@ -1,0 +1,312 @@
+[
+  {
+    "uri": "Requisito2.feature",
+    "id": "registro-de-usuario",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de usuario",
+    "description": "",
+    "elements": [
+      {
+        "id": "registro-exitoso",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Registro exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 5.556985378265381
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "Introduzco datos v\u00e1lidos en todos los campos",
+            "result": {
+              "status": "passed",
+              "duration": 1.3693733215332031
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 6,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.19831418991088867
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "Deber\u00eda ver un mensaje de confirmaci\u00f3n diciendo \"Datos ingresados correctamente.\"",
+            "result": {
+              "status": "passed",
+              "duration": 2.347320079803467
+            }
+          }
+        ]
+      },
+      {
+        "id": "nombre-con-n\u00fameros",
+        "line": 9,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Nombre con n\u00fameros",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 10,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 5.332705020904541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 11,
+            "name": "Introduzco \"John123\" en el campo \"Nombre\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.2663547992706299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 12,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.21511220932006836
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 13,
+            "name": "Deber\u00eda ver un mensaje de alerta diciendo \"Solo se permiten letras\" para el campo \"Nombre\"",
+            "result": {
+              "status": "failed",
+              "duration": 40.25277280807495
+            }
+          }
+        ]
+      },
+      {
+        "id": "apellido-con-n\u00fameros",
+        "line": 15,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Apellido con n\u00fameros",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 16,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 5.165814399719238
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 17,
+            "name": "Introduzco \"Doe456\" en el campo \"Apellido\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.3376390933990479
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 18,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.20136046409606934
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 19,
+            "name": "Deber\u00eda ver un mensaje de alerta diciendo \"Solo se permiten letras\" para el campo \"Apellido\"",
+            "result": {
+              "status": "failed",
+              "duration": 40.23310089111328
+            }
+          }
+        ]
+      },
+      {
+        "id": "fecha-de-nacimiento-muy-antigua",
+        "line": 21,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Fecha de nacimiento muy antigua (Intentional failure)",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 22,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 5.771555662155151
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 23,
+            "name": "Introduzco \"1899-12-31\" en el campo \"Fecha de nacimiento\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.2482655048370361
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 24,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.23335528373718262
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 25,
+            "name": "Deber\u00eda ver un mensaje de alerta diciendo \"La fecha de nacimiento no puede ser anterior al a\u00f1o 1900\"",
+            "result": {
+              "status": "failed",
+              "duration": 40.51568126678467
+            }
+          }
+        ]
+      },
+      {
+        "id": "usuario-menor-de-18-a\u00f1os",
+        "line": 27,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Usuario menor de 18 a\u00f1os",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 28,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 5.702662467956543
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 29,
+            "name": "Introduzco una fecha de nacimiento que hace al usuario menor de 18 a\u00f1os en el campo \"Fecha de nacimiento\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.4238224029541016
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 30,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.287600040435791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 31,
+            "name": "Deber\u00eda ver un mensaje de validaci\u00f3n diciendo \"Debe tener al menos 18 a\u00f1os\"",
+            "result": {
+              "status": "failed",
+              "duration": 40.65104150772095
+            }
+          }
+        ]
+      },
+      {
+        "id": "n\u00famero-de-c\u00e9dula-negativo",
+        "line": 33,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "N\u00famero de c\u00e9dula negativo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 34,
+            "name": "Navego a la p\u00e1gina de registro",
+            "result": {
+              "status": "passed",
+              "duration": 6.555817127227783
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 35,
+            "name": "Introduzco \"-12345678\" en el campo \"Cedula de Identidad\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.3551125526428223
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 36,
+            "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.29563140869140625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 37,
+            "name": "Deber\u00eda ver un mensaje de validaci\u00f3n diciendo \"El n\u00famero de c\u00e9dula es requerido\"",
+            "result": {
+              "status": "failed",
+              "duration": 40.41364860534668
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

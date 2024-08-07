@@ -1,0 +1,212 @@
+[
+  {
+    "uri": "Requisito3.feature",
+    "id": "autenticaci\u00f3n-de-usuarios",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Autenticaci\u00f3n de Usuarios",
+    "description": "",
+    "elements": [
+      {
+        "id": "inicio-de-sesi\u00f3n-exitoso",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Inicio de sesi\u00f3n exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.699136257171631
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "Ingreso credenciales v\u00e1lidas",
+            "result": {
+              "status": "passed",
+              "duration": 0.4558737277984619
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 6,
+            "name": "Deber\u00eda ver un mensaje de \u00e9xito y navegar al men\u00fa",
+            "result": {
+              "status": "passed",
+              "duration": 2.387683629989624
+            }
+          }
+        ]
+      },
+      {
+        "id": "campos-vac\u00edos",
+        "line": 8,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Campos vac\u00edos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 9,
+            "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 5.0204243659973145
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 10,
+            "name": "Dejo todos los campos vac\u00edos",
+            "result": {
+              "status": "passed",
+              "duration": 0.31704020500183105
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 11,
+            "name": "Deber\u00eda ver un mensaje indicando que los campos son obligatorios",
+            "result": {
+              "status": "passed",
+              "duration": 0.17498517036437988
+            }
+          }
+        ]
+      },
+      {
+        "id": "nombre-de-usuario-no-v\u00e1lido",
+        "line": 13,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Nombre de usuario no v\u00e1lido",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 14,
+            "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.583996772766113
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "Ingreso un nombre de usuario no v\u00e1lido",
+            "result": {
+              "status": "passed",
+              "duration": 0.48119497299194336
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "Deber\u00eda ver un mensaje de error de nombre de usuario",
+            "result": {
+              "status": "failed",
+              "duration": 20.251906633377075
+            }
+          }
+        ]
+      },
+      {
+        "id": "contrase\u00f1a-inv\u00e1lida",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Contrase\u00f1a inv\u00e1lida",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 5.103432655334473
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "Ingreso una contrase\u00f1a no v\u00e1lida",
+            "result": {
+              "status": "passed",
+              "duration": 0.4823300838470459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 21,
+            "name": "Deber\u00eda ver un mensaje de error de contrase\u00f1a",
+            "result": {
+              "status": "failed",
+              "duration": 20.380363941192627
+            }
+          }
+        ]
+      },
+      {
+        "id": "credenciales-no-v\u00e1lidas",
+        "line": 23,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Credenciales no v\u00e1lidas",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 24,
+            "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 5.382369756698608
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 25,
+            "name": "Ingreso credenciales no v\u00e1lidas",
+            "result": {
+              "status": "passed",
+              "duration": 0.5514473915100098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 26,
+            "name": "Deber\u00eda ver un mensaje de error de credenciales no v\u00e1lidas",
+            "result": {
+              "status": "failed",
+              "duration": 20.291213989257812
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

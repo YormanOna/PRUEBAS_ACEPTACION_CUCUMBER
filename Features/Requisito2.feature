@@ -18,7 +18,7 @@ Feature: Registro de usuario
     And Hago clic en el botón "Registrarse"
     Then Debería ver un mensaje de alerta diciendo "Solo se permiten letras" para el campo "Apellido"
 
-  Scenario: Fecha de nacimiento muy antigua (Intentional failure)
+  Scenario: Fecha de nacimiento muy antigua 
     Given Navego a la página de registro
     When Introduzco "1899-12-31" en el campo "Fecha de nacimiento"
     And Hago clic en el botón "Registrarse"

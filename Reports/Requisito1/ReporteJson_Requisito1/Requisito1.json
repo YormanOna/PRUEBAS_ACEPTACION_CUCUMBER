@@ -1,0 +1,404 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "Requisito1.feature:3",
+      "name": "Ver la imagen de inicio del men\u00fa de bartender",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito1.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del men\u00fa",
+          "result": {
+            "duration": 6.267465114593506,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito1.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "selecciono el servicio de bartender",
+          "result": {
+            "duration": 0.1707932949066162,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito1.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:31"
+          },
+          "name": "deber\u00eda ver la imagen de inicio del men\u00fa de bartender",
+          "result": {
+            "duration": 2.3684468269348145,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito1.feature:8",
+      "name": "Ver la imagen de fin del men\u00fa de bartender",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito1.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del men\u00fa",
+          "result": {
+            "duration": 5.575111627578735,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito1.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "selecciono el servicio de bartender",
+          "result": {
+            "duration": 0.16894793510437012,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito1.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:45"
+          },
+          "name": "navego a la \u00faltima p\u00e1gina del men\u00fa de bartender",
+          "result": {
+            "duration": 7.68485951423645,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito1.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:54"
+          },
+          "name": "deber\u00eda ver la imagen de fin del men\u00fa de bartender",
+          "result": {
+            "duration": 2.2284677028656006,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito1.feature:14",
+      "name": "Volver a la imagen de inicio del men\u00fa de bartender desde la \u00faltima p\u00e1gina",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito1.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del men\u00fa",
+          "result": {
+            "duration": 5.770235061645508,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito1.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "selecciono el servicio de bartender",
+          "result": {
+            "duration": 0.17513275146484375,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito1.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:45"
+          },
+          "name": "navego a la \u00faltima p\u00e1gina del men\u00fa de bartender",
+          "result": {
+            "duration": 7.762156963348389,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito1.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:68"
+          },
+          "name": "vuelvo a la primera p\u00e1gina del men\u00fa de bartender desde la \u00faltima p\u00e1gina",
+          "result": {
+            "duration": 1.3334896564483643,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 73, in step_impl",
+              "    prev_button.click()",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 94, in click",
+              "    self._execute(Command.CLICK_ELEMENT)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 395, in _execute",
+              "    return self._parent.execute(command, params)",
+              "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 354, in execute",
+              "    self.error_handler.check_response(response)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response",
+              "    raise exception_class(message, screen, stacktrace)",
+              "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class=\"nav-button left\">...</button> is not clickable at point (548, 529). Other element would receive the click: <button class=\"nav-button right\">...</button>",
+              "  (Session info: chrome=127.0.6533.89)",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x003891C7]",
+              "\t(No symbol) [0x003875D9]",
+              "\t(No symbol) [0x003854CB]",
+              "\t(No symbol) [0x00384AAF]",
+              "\t(No symbol) [0x003799EF]",
+              "\t(No symbol) [0x003A441C]",
+              "\t(No symbol) [0x00379485]",
+              "\t(No symbol) [0x003A46B4]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito1.feature:19",
+          "name": "deber\u00eda ver nuevamente la imagen de inicio del men\u00fa de bartender",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito1.feature:21",
+      "name": "Ver el componente de catering",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito1.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del men\u00fa",
+          "result": {
+            "duration": 5.621938467025757,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito1.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:91"
+          },
+          "name": "selecciono el servicio de catering y navego a la secci\u00f3n de catering",
+          "result": {
+            "duration": 0.631462812423706,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito1.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:99"
+          },
+          "name": "deber\u00eda ver el componente de catering",
+          "result": {
+            "duration": 2.1911003589630127,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito1.feature:26",
+      "name": "Ver un componente inexistente",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito1.feature:27",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "navego a la p\u00e1gina del men\u00fa",
+          "result": {
+            "duration": 9.643703699111938,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito1.feature:28",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "selecciono el servicio de bartender",
+          "result": {
+            "duration": 0.17909765243530273,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito1.feature:29",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:113"
+          },
+          "name": "deber\u00eda ver un componente inexistente",
+          "result": {
+            "duration": 10.387008905410767,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 125, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 117, in step_impl",
+              "    component = WebDriverWait(context.driver, 10).until(",
+              "                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "Requisito1.feature:1",
+  "name": "Catalogo de servicios",
+  "status": "failed",
+  "tags": []
+}
+]

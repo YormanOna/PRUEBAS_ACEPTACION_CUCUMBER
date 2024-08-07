@@ -1,0 +1,406 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "Requisito3.feature:3",
+      "name": "Inicio de sesi\u00f3n exitoso",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito3.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+          "result": {
+            "duration": 4.699136257171631,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito3.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:26"
+          },
+          "name": "Ingreso credenciales v\u00e1lidas",
+          "result": {
+            "duration": 0.4558737277984619,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito3.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:35"
+          },
+          "name": "Deber\u00eda ver un mensaje de \u00e9xito y navegar al men\u00fa",
+          "result": {
+            "duration": 2.387683629989624,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito3.feature:8",
+      "name": "Campos vac\u00edos",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito3.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+          "result": {
+            "duration": 5.0204243659973145,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito3.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:51"
+          },
+          "name": "Dejo todos los campos vac\u00edos",
+          "result": {
+            "duration": 0.31704020500183105,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito3.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:58"
+          },
+          "name": "Deber\u00eda ver un mensaje indicando que los campos son obligatorios",
+          "result": {
+            "duration": 0.17498517036437988,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito3.feature:13",
+      "name": "Nombre de usuario no v\u00e1lido",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito3.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+          "result": {
+            "duration": 4.583996772766113,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito3.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:70"
+          },
+          "name": "Ingreso un nombre de usuario no v\u00e1lido",
+          "result": {
+            "duration": 0.48119497299194336,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito3.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:79"
+          },
+          "name": "Deber\u00eda ver un mensaje de error de nombre de usuario",
+          "result": {
+            "duration": 20.251906633377075,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 89, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 82, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 20).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito3.feature:18",
+      "name": "Contrase\u00f1a inv\u00e1lida",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito3.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+          "result": {
+            "duration": 5.103432655334473,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito3.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:91"
+          },
+          "name": "Ingreso una contrase\u00f1a no v\u00e1lida",
+          "result": {
+            "duration": 0.4823300838470459,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito3.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:100"
+          },
+          "name": "Deber\u00eda ver un mensaje de error de contrase\u00f1a",
+          "result": {
+            "duration": 20.380363941192627,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 110, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 103, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 20).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito3.feature:23",
+      "name": "Credenciales no v\u00e1lidas",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito3.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:19"
+          },
+          "name": "Navego a la p\u00e1gina de inicio de sesi\u00f3n",
+          "result": {
+            "duration": 5.382369756698608,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito3.feature:25",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:112"
+          },
+          "name": "Ingreso credenciales no v\u00e1lidas",
+          "result": {
+            "duration": 0.5514473915100098,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito3.feature:26",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:121"
+          },
+          "name": "Deber\u00eda ver un mensaje de error de credenciales no v\u00e1lidas",
+          "result": {
+            "duration": 20.291213989257812,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 131, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 124, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 20).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "Requisito3.feature:1",
+  "name": "Autenticaci\u00f3n de Usuarios",
+  "status": "failed",
+  "tags": []
+}
+]

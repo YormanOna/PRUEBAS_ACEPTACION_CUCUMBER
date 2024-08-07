@@ -1,0 +1,172 @@
+[
+  {
+    "uri": "Requisito6.feature",
+    "id": "cotizaci\u00f3n-automatica",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cotizaci\u00f3n Automatica",
+    "description": "",
+    "elements": [
+      {
+        "id": "generar-una-cotizaci\u00f3n-detallada",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar una cotizaci\u00f3n detallada",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.689346551895142
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "selecciono un servicio y una fecha y genero la cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 0.35893845558166504
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 6,
+            "name": "deber\u00eda ver la cotizaci\u00f3n detallada",
+            "result": {
+              "status": "passed",
+              "duration": 7.287919759750366
+            }
+          }
+        ]
+      },
+      {
+        "id": "generar-una-cotizaci\u00f3n-sin-llenar-todos-los-campos",
+        "line": 8,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar una cotizaci\u00f3n sin llenar todos los campos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 9,
+            "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.485059022903442
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 10,
+            "name": "no lleno todos los campos y genero la cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 0.32925987243652344
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 11,
+            "name": "deber\u00eda ver un mensaje de error",
+            "result": {
+              "status": "failed",
+              "duration": 8.265577793121338
+            }
+          }
+        ]
+      },
+      {
+        "id": "generar-una-cotizaci\u00f3n-con-extras",
+        "line": 13,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar una cotizaci\u00f3n con extras",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 14,
+            "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.446987867355347
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "selecciono un servicio, una fecha, y extras y genero la cotizaci\u00f3n",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "deber\u00eda ver la cotizaci\u00f3n detallada con los extras",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "generar-una-cotizaci\u00f3n-sin-seleccionar-servicio",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar una cotizaci\u00f3n sin seleccionar servicio",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
+            "result": {
+              "status": "passed",
+              "duration": 4.443294048309326
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "genero la cotizaci\u00f3n sin seleccionar servicio",
+            "result": {
+              "status": "passed",
+              "duration": 0.2982628345489502
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 21,
+            "name": "deber\u00eda ver un mensaje de error por falta de servicio",
+            "result": {
+              "status": "failed",
+              "duration": 7.294217586517334
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
