@@ -1,18 +1,18 @@
 [
   {
-    "uri": "Requisito4.feature",
-    "id": "calendario-de-disponibilidad",
+    "uri": "Requisito6.feature",
+    "id": "calendario-de-reservas",
     "line": 1,
     "keyword": "Feature",
-    "name": "Calendario de Disponibilidad",
+    "name": "Calendario de Reservas",
     "description": "",
     "elements": [
       {
-        "id": "ver-la-informaci\u00f3n-de-la-fecha-seleccionada",
+        "id": "selecci\u00f3n-de-fecha-disponible",
         "line": 3,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Ver la informaci\u00f3n de la fecha seleccionada",
+        "name": "Selecci\u00f3n de fecha disponible",
         "description": "",
         "steps": [
           {
@@ -22,7 +22,7 @@
             "name": "navego a la p\u00e1gina del calendario",
             "result": {
               "status": "passed",
-              "duration": 4.671226501464844
+              "duration": 4.865967273712158
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "selecciono una fecha disponible",
             "result": {
               "status": "passed",
-              "duration": 0.22673940658569336
+              "duration": 0.2428734302520752
             }
           },
           {
@@ -42,17 +42,17 @@
             "name": "deber\u00eda ver la informaci\u00f3n de la fecha seleccionada",
             "result": {
               "status": "passed",
-              "duration": 2.320713996887207
+              "duration": 2.288924217224121
             }
           }
         ]
       },
       {
-        "id": "intentar-seleccionar-una-fecha-reservada",
+        "id": "intento-seleccionar-una-fecha-reservada",
         "line": 8,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Intentar seleccionar una fecha reservada",
+        "name": "Intento seleccionar una fecha reservada",
         "description": "",
         "steps": [
           {
@@ -62,7 +62,7 @@
             "name": "navego a la p\u00e1gina del calendario",
             "result": {
               "status": "passed",
-              "duration": 4.556750774383545
+              "duration": 4.532588005065918
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "intento seleccionar una fecha reservada",
             "result": {
               "status": "passed",
-              "duration": 0.19319629669189453
+              "duration": 0.22432971000671387
             }
           },
           {
@@ -82,17 +82,17 @@
             "name": "deber\u00eda ver un mensaje de error",
             "result": {
               "status": "failed",
-              "duration": 22.431617736816406
+              "duration": 22.461954593658447
             }
           }
         ]
       },
       {
-        "id": "seleccionar-una-fecha-con-disponibilidad-limitada",
+        "id": "selecci\u00f3n-de-fecha-con-disponibilidad-limitada",
         "line": 13,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Seleccionar una fecha con disponibilidad limitada",
+        "name": "Selecci\u00f3n de fecha con disponibilidad limitada",
         "description": "",
         "steps": [
           {
@@ -102,7 +102,7 @@
             "name": "navego a la p\u00e1gina del calendario",
             "result": {
               "status": "passed",
-              "duration": 5.215329885482788
+              "duration": 4.992180585861206
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "selecciono una fecha con disponibilidad limitada",
             "result": {
               "status": "failed",
-              "duration": 10.38237714767456
+              "duration": 10.591115951538086
             }
           },
           {
@@ -128,11 +128,11 @@
         ]
       },
       {
-        "id": "hacer-clic-en-reservar-ahora",
+        "id": "hago-clic-en-reservar-ahora",
         "line": 18,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Hacer clic en reservar ahora",
+        "name": "Hago clic en reservar ahora",
         "description": "",
         "steps": [
           {
@@ -142,7 +142,7 @@
             "name": "navego a la p\u00e1gina del calendario",
             "result": {
               "status": "passed",
-              "duration": 5.5497519969940186
+              "duration": 5.771171569824219
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "hago clic en reservar ahora",
             "result": {
               "status": "passed",
-              "duration": 0.19418644905090332
+              "duration": 0.18399429321289062
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "deber\u00eda ver la p\u00e1gina de reserva",
             "result": {
               "status": "failed",
-              "duration": 22.386977195739746
+              "duration": 22.375879287719727
             }
           }
         ]

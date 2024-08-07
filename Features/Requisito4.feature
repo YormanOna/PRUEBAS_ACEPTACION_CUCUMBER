@@ -1,4 +1,4 @@
-Feature: Calendario de Reservas
+Feature: Calendario de disponibilidad
 
   Scenario: Selección de fecha disponible
     Given navego a la página del calendario

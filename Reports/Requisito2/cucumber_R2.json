@@ -162,7 +162,7 @@
         "line": 21,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Fecha de nacimiento muy antigua (Intentional failure)",
+        "name": "Fecha de nacimiento muy antigua",
         "description": "",
         "steps": [
           {

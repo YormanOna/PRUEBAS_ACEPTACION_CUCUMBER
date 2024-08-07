@@ -3,48 +3,48 @@
   "elements": [
     {
       "keyword": "Scenario",
-      "location": "Requisito4.feature:3",
-      "name": "Ver la informaci\u00f3n de la fecha seleccionada",
+      "location": "Requisito6.feature:3",
+      "name": "Selecci\u00f3n de fecha disponible",
       "status": "passed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito4.feature:4",
+          "location": "Requisito6.feature:4",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:19"
           },
           "name": "navego a la p\u00e1gina del calendario",
           "result": {
-            "duration": 4.671226501464844,
+            "duration": 4.865967273712158,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito4.feature:5",
+          "location": "Requisito6.feature:5",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:26"
           },
           "name": "selecciono una fecha disponible",
           "result": {
-            "duration": 0.22673940658569336,
+            "duration": 0.2428734302520752,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito4.feature:6",
+          "location": "Requisito6.feature:6",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:34"
           },
           "name": "deber\u00eda ver la informaci\u00f3n de la fecha seleccionada",
           "result": {
-            "duration": 2.320713996887207,
+            "duration": 2.288924217224121,
             "status": "passed"
           },
           "step_type": "then"
@@ -55,55 +55,55 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito4.feature:8",
-      "name": "Intentar seleccionar una fecha reservada",
+      "location": "Requisito6.feature:8",
+      "name": "Intento seleccionar una fecha reservada",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito4.feature:9",
+          "location": "Requisito6.feature:9",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:19"
           },
           "name": "navego a la p\u00e1gina del calendario",
           "result": {
-            "duration": 4.556750774383545,
+            "duration": 4.532588005065918,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito4.feature:10",
+          "location": "Requisito6.feature:10",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:48"
           },
           "name": "intento seleccionar una fecha reservada",
           "result": {
-            "duration": 0.19319629669189453,
+            "duration": 0.22432971000671387,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito4.feature:11",
+          "location": "Requisito6.feature:11",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:56"
           },
           "name": "deber\u00eda ver un mensaje de error",
           "result": {
-            "duration": 22.431617736816406,
+            "duration": 22.461954593658447,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 67, in step_impl",
+              "  File \"pruebaSteps.py\", line 66, in step_impl",
               "    raise e",
               "  File \"pruebaSteps.py\", line 59, in step_impl",
               "    error_message = WebDriverWait(context.driver, 20).until(",
@@ -152,34 +152,34 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito4.feature:13",
-      "name": "Seleccionar una fecha con disponibilidad limitada",
+      "location": "Requisito6.feature:13",
+      "name": "Selecci\u00f3n de fecha con disponibilidad limitada",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito4.feature:14",
+          "location": "Requisito6.feature:14",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:19"
           },
           "name": "navego a la p\u00e1gina del calendario",
           "result": {
-            "duration": 5.215329885482788,
+            "duration": 4.992180585861206,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito4.feature:15",
+          "location": "Requisito6.feature:15",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:71"
+            "location": "pruebaSteps.py:70"
           },
           "name": "selecciono una fecha con disponibilidad limitada",
           "result": {
-            "duration": 10.38237714767456,
+            "duration": 10.591115951538086,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
@@ -229,7 +229,7 @@
         },
         {
           "keyword": "Then",
-          "location": "Requisito4.feature:16",
+          "location": "Requisito6.feature:16",
           "name": "deber\u00eda ver un mensaje de disponibilidad limitada",
           "step_type": "then"
         }
@@ -239,57 +239,57 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito4.feature:18",
-      "name": "Hacer clic en reservar ahora",
+      "location": "Requisito6.feature:18",
+      "name": "Hago clic en reservar ahora",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito4.feature:19",
+          "location": "Requisito6.feature:19",
           "match": {
             "arguments": [],
             "location": "pruebaSteps.py:19"
           },
           "name": "navego a la p\u00e1gina del calendario",
           "result": {
-            "duration": 5.5497519969940186,
+            "duration": 5.771171569824219,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito4.feature:20",
+          "location": "Requisito6.feature:20",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:94"
+            "location": "pruebaSteps.py:92"
           },
           "name": "hago clic en reservar ahora",
           "result": {
-            "duration": 0.19418644905090332,
+            "duration": 0.18399429321289062,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito4.feature:21",
+          "location": "Requisito6.feature:21",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:102"
+            "location": "pruebaSteps.py:100"
           },
           "name": "deber\u00eda ver la p\u00e1gina de reserva",
           "result": {
-            "duration": 22.386977195739746,
+            "duration": 22.375879287719727,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 113, in step_impl",
+              "  File \"pruebaSteps.py\", line 110, in step_impl",
               "    raise e",
-              "  File \"pruebaSteps.py\", line 105, in step_impl",
+              "  File \"pruebaSteps.py\", line 103, in step_impl",
               "    reserve_page = WebDriverWait(context.driver, 20).until(",
               "                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
@@ -336,8 +336,8 @@
     }
   ],
   "keyword": "Feature",
-  "location": "Requisito4.feature:1",
-  "name": "Calendario de Disponibilidad",
+  "location": "Requisito6.feature:1",
+  "name": "Calendario de Reservas",
   "status": "failed",
   "tags": []
 }
