@@ -1,0 +1,586 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:3",
+      "name": "Registro exitoso",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 5.556985378265381,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:43"
+          },
+          "name": "Introduzco datos v\u00e1lidos en todos los campos",
+          "result": {
+            "duration": 1.3693733215332031,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.19831418991088867,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:52"
+          },
+          "name": "Deber\u00eda ver un mensaje de confirmaci\u00f3n diciendo \"Datos ingresados correctamente.\"",
+          "result": {
+            "duration": 2.347320079803467,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:9",
+      "name": "Nombre con n\u00fameros",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 5.332705020904541,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:65"
+          },
+          "name": "Introduzco \"John123\" en el campo \"Nombre\"",
+          "result": {
+            "duration": 1.2663547992706299,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.21511220932006836,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:69"
+          },
+          "name": "Deber\u00eda ver un mensaje de alerta diciendo \"Solo se permiten letras\" para el campo \"Nombre\"",
+          "result": {
+            "duration": 40.25277280807495,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 80, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 72, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 40).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:15",
+      "name": "Apellido con n\u00fameros",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 5.165814399719238,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:82"
+          },
+          "name": "Introduzco \"Doe456\" en el campo \"Apellido\"",
+          "result": {
+            "duration": 1.3376390933990479,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.20136046409606934,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:86"
+          },
+          "name": "Deber\u00eda ver un mensaje de alerta diciendo \"Solo se permiten letras\" para el campo \"Apellido\"",
+          "result": {
+            "duration": 40.23310089111328,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 97, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 89, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 40).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:21",
+      "name": "Fecha de nacimiento muy antigua (Intentional failure)",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 5.771555662155151,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:99"
+          },
+          "name": "Introduzco \"1899-12-31\" en el campo \"Fecha de nacimiento\"",
+          "result": {
+            "duration": 1.2482655048370361,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.23335528373718262,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:25",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:103"
+          },
+          "name": "Deber\u00eda ver un mensaje de alerta diciendo \"La fecha de nacimiento no puede ser anterior al a\u00f1o 1900\"",
+          "result": {
+            "duration": 40.51568126678467,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 114, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 106, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 40).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:27",
+      "name": "Usuario menor de 18 a\u00f1os",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:28",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 5.702662467956543,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:29",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:116"
+          },
+          "name": "Introduzco una fecha de nacimiento que hace al usuario menor de 18 a\u00f1os en el campo \"Fecha de nacimiento\"",
+          "result": {
+            "duration": 1.4238224029541016,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:30",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.287600040435791,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:31",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:120"
+          },
+          "name": "Deber\u00eda ver un mensaje de validaci\u00f3n diciendo \"Debe tener al menos 18 a\u00f1os\"",
+          "result": {
+            "duration": 40.65104150772095,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 131, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 123, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 40).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "Requisito2.feature:33",
+      "name": "N\u00famero de c\u00e9dula negativo",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "Requisito2.feature:34",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:37"
+          },
+          "name": "Navego a la p\u00e1gina de registro",
+          "result": {
+            "duration": 6.555817127227783,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "Requisito2.feature:35",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:133"
+          },
+          "name": "Introduzco \"-12345678\" en el campo \"Cedula de Identidad\"",
+          "result": {
+            "duration": 1.3551125526428223,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "Requisito2.feature:36",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:47"
+          },
+          "name": "Hago clic en el bot\u00f3n \"Registrarse\"",
+          "result": {
+            "duration": 0.29563140869140625,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "Requisito2.feature:37",
+          "match": {
+            "arguments": [],
+            "location": "pruebaSteps.py:137"
+          },
+          "name": "Deber\u00eda ver un mensaje de validaci\u00f3n diciendo \"El n\u00famero de c\u00e9dula es requerido\"",
+          "result": {
+            "duration": 40.41364860534668,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"pruebaSteps.py\", line 148, in step_impl",
+              "    raise e",
+              "  File \"pruebaSteps.py\", line 140, in step_impl",
+              "    error_message = WebDriverWait(context.driver, 40).until(",
+              "                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x00448923+23283]",
+              "\t(No symbol) [0x0040E934]",
+              "\t(No symbol) [0x00340733]",
+              "\t(No symbol) [0x0038326F]",
+              "\t(No symbol) [0x003834AB]",
+              "\t(No symbol) [0x003BEE42]",
+              "\t(No symbol) [0x003A4464]",
+              "\t(No symbol) [0x003BCB8D]",
+              "\t(No symbol) [0x003A41B6]",
+              "\t(No symbol) [0x00378017]",
+              "\t(No symbol) [0x0037890D]",
+              "\tGetHandleVerifier [0x0053A5E3+1013683]",
+              "\tGetHandleVerifier [0x00543E3C+1052684]",
+              "\tGetHandleVerifier [0x0053D4A4+1025652]",
+              "\tGetHandleVerifier [0x0046EA2B+179195]",
+              "\t(No symbol) [0x00416833]",
+              "\t(No symbol) [0x00413198]",
+              "\t(No symbol) [0x00413337]",
+              "\t(No symbol) [0x0040B4BE]",
+              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
+              "\tRtlClearBits [0x77BBC08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "Requisito2.feature:1",
+  "name": "Registro de usuario",
+  "status": "failed",
+  "tags": []
+}
+]
