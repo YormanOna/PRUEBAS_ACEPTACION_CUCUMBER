@@ -1,6 +1,6 @@
 [
   {
-    "uri": "Requisito6.feature",
+    "uri": "../cotizacion.feature",
     "id": "cotizaci\u00f3n-automatica",
     "line": 1,
     "keyword": "Feature",
@@ -22,7 +22,7 @@
             "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.689346551895142
+              "duration": 4.96947169303894
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "selecciono un servicio y una fecha y genero la cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 0.35893845558166504
+              "duration": 2.879492998123169
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "deber\u00eda ver la cotizaci\u00f3n detallada",
             "result": {
               "status": "passed",
-              "duration": 7.287919759750366
+              "duration": 4.334399700164795
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.485059022903442
+              "duration": 4.736138105392456
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "no lleno todos los campos y genero la cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 0.32925987243652344
+              "duration": 2.3446450233459473
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "deber\u00eda ver un mensaje de error",
             "result": {
               "status": "failed",
-              "duration": 8.265577793121338
+              "duration": 12.389899253845215
             }
           }
         ]
@@ -102,7 +102,7 @@
             "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.446987867355347
+              "duration": 5.615762233734131
             }
           },
           {
@@ -111,8 +111,8 @@
             "line": 15,
             "name": "selecciono un servicio, una fecha, y extras y genero la cotizaci\u00f3n",
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2.6074001789093018
             }
           },
           {
@@ -121,8 +121,8 @@
             "line": 16,
             "name": "deber\u00eda ver la cotizaci\u00f3n detallada con los extras",
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 24.70343542098999
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.443294048309326
+              "duration": 5.094249963760376
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "genero la cotizaci\u00f3n sin seleccionar servicio",
             "result": {
               "status": "passed",
-              "duration": 0.2982628345489502
+              "duration": 2.700902223587036
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "deber\u00eda ver un mensaje de error por falta de servicio",
             "result": {
               "status": "failed",
-              "duration": 7.294217586517334
+              "duration": 14.429516077041626
             }
           }
         ]

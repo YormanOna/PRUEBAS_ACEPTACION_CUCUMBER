@@ -3,48 +3,48 @@
   "elements": [
     {
       "keyword": "Scenario",
-      "location": "Requisito5.feature:3",
-      "name": "Ver el gestor de cocteles",
+      "location": "features/steps/Requisito5.feature:3",
+      "name": "Ver el gestor de paquetes",
       "status": "passed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito5.feature:4",
+          "location": "features/steps/Requisito5.feature:4",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "features/steps/steps.py:17"
           },
           "name": "navego al panel de administraci\u00f3n",
           "result": {
-            "duration": 4.822600603103638,
+            "duration": 5.000625371932983,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito5.feature:5",
+          "location": "features/steps/Requisito5.feature:5",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:26"
+            "location": "features/steps/steps.py:24"
           },
-          "name": "selecciono la pesta\u00f1a de cocteles",
+          "name": "selecciono la pesta\u00f1a de paquetes",
           "result": {
-            "duration": 0.2705974578857422,
+            "duration": 0.31882333755493164,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito5.feature:6",
+          "location": "features/steps/Requisito5.feature:6",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:35"
+            "location": "features/steps/steps.py:32"
           },
-          "name": "deber\u00eda ver el gestor de cocteles",
+          "name": "deber\u00eda ver el gestor de paquetes",
           "result": {
-            "duration": 2.3382680416107178,
+            "duration": 2.3790135383605957,
             "status": "passed"
           },
           "step_type": "then"
@@ -55,97 +55,90 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito5.feature:8",
+      "location": "features/steps/Requisito5.feature:8",
       "name": "Agregar un nuevo coctel",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito5.feature:9",
+          "location": "features/steps/Requisito5.feature:9",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "features/steps/steps.py:17"
           },
           "name": "navego al panel de administraci\u00f3n",
           "result": {
-            "duration": 4.7200846672058105,
+            "duration": 4.607439279556274,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito5.feature:10",
+          "location": "features/steps/Requisito5.feature:10",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:26"
+            "location": "features/steps/steps.py:105"
           },
           "name": "selecciono la pesta\u00f1a de cocteles",
           "result": {
-            "duration": 0.25423598289489746,
+            "duration": 0.295166015625,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "And",
-          "location": "Requisito5.feature:11",
+          "location": "features/steps/Requisito5.feature:11",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:50"
+            "location": "features/steps/steps.py:47"
           },
           "name": "agrego un nuevo coctel",
           "result": {
-            "duration": 0.7465004920959473,
+            "duration": 10.82990312576294,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 62, in step_impl",
-              "    context.driver.find_element(By.NAME, \"imagen\").send_keys(os.path.abspath(\"test_image.jpg\"))",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 231, in send_keys",
-              "    self._execute(",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 395, in _execute",
-              "    return self._parent.execute(command, params)",
-              "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 354, in execute",
-              "    self.error_handler.check_response(response)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response",
-              "    raise exception_class(message, screen, stacktrace)",
-              "selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: File not found : C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\PRUEBAS\\features\\steps\\test_image.jpg",
-              "  (Session info: chrome=127.0.6533.89)",
+              "  File \"features\\steps\\steps.py\", line 61, in step_impl",
+              "    activate_button = WebDriverWait(context.driver, 10).until(",
+              "                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
               "Stacktrace:",
-              "\tGetHandleVerifier [0x00448923+23283]",
-              "\t(No symbol) [0x0040E934]",
-              "\t(No symbol) [0x00340733]",
-              "\t(No symbol) [0x0037CD68]",
-              "\t(No symbol) [0x003A441C]",
-              "\t(No symbol) [0x00379485]",
-              "\t(No symbol) [0x003A46B4]",
-              "\t(No symbol) [0x003BCB8D]",
-              "\t(No symbol) [0x003A41B6]",
-              "\t(No symbol) [0x00378017]",
-              "\t(No symbol) [0x0037890D]",
-              "\tGetHandleVerifier [0x0053A5E3+1013683]",
-              "\tGetHandleVerifier [0x00543E3C+1052684]",
-              "\tGetHandleVerifier [0x0053D4A4+1025652]",
-              "\tGetHandleVerifier [0x0046EA2B+179195]",
-              "\t(No symbol) [0x00416833]",
-              "\t(No symbol) [0x00413198]",
-              "\t(No symbol) [0x00413337]",
-              "\t(No symbol) [0x0040B4BE]",
-              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
-              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
-              "\tRtlClearBits [0x77BBC08F+191]",
+              "\tGetHandleVerifier [0x010C8923+23283]",
+              "\t(No symbol) [0x0108E934]",
+              "\t(No symbol) [0x00FC0733]",
+              "\t(No symbol) [0x0100326F]",
+              "\t(No symbol) [0x010034AB]",
+              "\t(No symbol) [0x0103EE42]",
+              "\t(No symbol) [0x01024464]",
+              "\t(No symbol) [0x0103CB8D]",
+              "\t(No symbol) [0x010241B6]",
+              "\t(No symbol) [0x00FF8017]",
+              "\t(No symbol) [0x00FF890D]",
+              "\tGetHandleVerifier [0x011BA5F3+1013699]",
+              "\tGetHandleVerifier [0x011C3E4C+1052700]",
+              "\tGetHandleVerifier [0x011BD4B4+1025668]",
+              "\tGetHandleVerifier [0x010EEA2B+179195]",
+              "\t(No symbol) [0x01096833]",
+              "\t(No symbol) [0x01093198]",
+              "\t(No symbol) [0x01093337]",
+              "\t(No symbol) [0x0108B4BE]",
+              "\tBaseThreadInitThunk [0x760D7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x7774C10B+107]",
+              "\tRtlClearBits [0x7774C08F+191]",
               "",
               "",
               "Captured logging:",
               "INFO:WDM:====== WebDriver manager ======",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe] found in cache"
             ],
             "status": "failed"
           },
@@ -153,7 +146,7 @@
         },
         {
           "keyword": "Then",
-          "location": "Requisito5.feature:12",
+          "location": "features/steps/Requisito5.feature:12",
           "name": "deber\u00eda ver el nuevo coctel en la lista",
           "step_type": "then"
         }
@@ -163,80 +156,69 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito5.feature:14",
+      "location": "features/steps/Requisito5.feature:14",
       "name": "Eliminar un coctel",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito5.feature:15",
+          "location": "features/steps/Requisito5.feature:15",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "features/steps/steps.py:17"
           },
           "name": "navego al panel de administraci\u00f3n",
           "result": {
-            "duration": 4.877546548843384,
+            "duration": 5.424097537994385,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito5.feature:16",
+          "location": "features/steps/Requisito5.feature:16",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:26"
+            "location": "features/steps/steps.py:105"
           },
           "name": "selecciono la pesta\u00f1a de cocteles",
           "result": {
-            "duration": 0.2656841278076172,
+            "duration": 0.23241281509399414,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "And",
-          "location": "Requisito5.feature:17",
+          "location": "features/steps/Requisito5.feature:17",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:81"
+            "location": "features/steps/steps.py:80"
           },
           "name": "elimino un coctel",
           "result": {
-            "duration": 0.7768473625183105,
+            "duration": 1.200239658355713,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito5.feature:18",
+          "location": "features/steps/Requisito5.feature:18",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:90"
+            "location": "features/steps/steps.py:89"
           },
           "name": "deber\u00eda ver el coctel eliminado de la lista",
           "result": {
-            "duration": 2.3167128562927246,
+            "duration": 2.3020071983337402,
             "error_message": [
-              "Traceback (most recent call last):",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
-              "    match.run(runner.context)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
-              "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 101, in step_impl",
-              "    raise e",
-              "  File \"pruebaSteps.py\", line 97, in step_impl",
-              "    assert coctel is None",
-              "           ^^^^^^^^^^^^^^",
-              "AssertionError",
-              "",
+              "Assertion Failed: Fallando este escenario intencionalmente",
               "Captured logging:",
               "INFO:WDM:====== WebDriver manager ======",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe] found in cache"
             ],
             "status": "failed"
           },
@@ -248,94 +230,49 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito5.feature:20",
-      "name": "Ver el gestor de paquetes",
-      "status": "failed",
+      "location": "features/steps/Requisito5.feature:21",
+      "name": "Ver el gestor de cocteles",
+      "status": "passed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito5.feature:21",
+          "location": "features/steps/Requisito5.feature:22",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "features/steps/steps.py:17"
           },
           "name": "navego al panel de administraci\u00f3n",
           "result": {
-            "duration": 5.56755805015564,
+            "duration": 5.821456432342529,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito5.feature:22",
+          "location": "features/steps/Requisito5.feature:23",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:105"
+            "location": "features/steps/steps.py:105"
           },
-          "name": "selecciono la pesta\u00f1a de paquetes",
+          "name": "selecciono la pesta\u00f1a de cocteles",
           "result": {
-            "duration": 0.30643439292907715,
+            "duration": 0.2061777114868164,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito5.feature:23",
+          "location": "features/steps/Requisito5.feature:24",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:114"
+            "location": "features/steps/steps.py:113"
           },
-          "name": "deber\u00eda ver el gestor de paquetes",
+          "name": "deber\u00eda ver el gestor de cocteles",
           "result": {
-            "duration": 22.600491762161255,
-            "error_message": [
-              "Traceback (most recent call last):",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
-              "    match.run(runner.context)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
-              "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 125, in step_impl",
-              "    raise e",
-              "  File \"pruebaSteps.py\", line 118, in step_impl",
-              "    paquete_manager = WebDriverWait(context.driver, 20).until(",
-              "                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
-              "    raise TimeoutException(message, screen, stacktrace)",
-              "selenium.common.exceptions.TimeoutException: Message: ",
-              "Stacktrace:",
-              "\tGetHandleVerifier [0x00448923+23283]",
-              "\t(No symbol) [0x0040E934]",
-              "\t(No symbol) [0x00340733]",
-              "\t(No symbol) [0x0038326F]",
-              "\t(No symbol) [0x003834AB]",
-              "\t(No symbol) [0x003BEE42]",
-              "\t(No symbol) [0x003A4464]",
-              "\t(No symbol) [0x003BCB8D]",
-              "\t(No symbol) [0x003A41B6]",
-              "\t(No symbol) [0x00378017]",
-              "\t(No symbol) [0x0037890D]",
-              "\tGetHandleVerifier [0x0053A5E3+1013683]",
-              "\tGetHandleVerifier [0x00543E3C+1052684]",
-              "\tGetHandleVerifier [0x0053D4A4+1025652]",
-              "\tGetHandleVerifier [0x0046EA2B+179195]",
-              "\t(No symbol) [0x00416833]",
-              "\t(No symbol) [0x00413198]",
-              "\t(No symbol) [0x00413337]",
-              "\t(No symbol) [0x0040B4BE]",
-              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
-              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
-              "\tRtlClearBits [0x77BBC08F+191]",
-              "",
-              "",
-              "Captured logging:",
-              "INFO:WDM:====== WebDriver manager ======",
-              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
-            ],
-            "status": "failed"
+            "duration": 2.2462949752807617,
+            "status": "passed"
           },
           "step_type": "then"
         }
@@ -345,7 +282,7 @@
     }
   ],
   "keyword": "Feature",
-  "location": "Requisito5.feature:1",
+  "location": "features/steps/Requisito5.feature:1",
   "name": "Panel de administraci\u00f3n",
   "status": "failed",
   "tags": []

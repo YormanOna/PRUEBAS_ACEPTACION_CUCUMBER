@@ -3,48 +3,48 @@
   "elements": [
     {
       "keyword": "Scenario",
-      "location": "Requisito6.feature:3",
+      "location": "../cotizacion.feature:3",
       "name": "Generar una cotizaci\u00f3n detallada",
       "status": "passed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito6.feature:4",
+          "location": "../cotizacion.feature:4",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "steps.py:17"
           },
           "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
           "result": {
-            "duration": 4.689346551895142,
+            "duration": 4.96947169303894,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito6.feature:5",
+          "location": "../cotizacion.feature:5",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:26"
+            "location": "steps.py:24"
           },
           "name": "selecciono un servicio y una fecha y genero la cotizaci\u00f3n",
           "result": {
-            "duration": 0.35893845558166504,
+            "duration": 2.879492998123169,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito6.feature:6",
+          "location": "../cotizacion.feature:6",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:39"
+            "location": "steps.py:51"
           },
           "name": "deber\u00eda ver la cotizaci\u00f3n detallada",
           "result": {
-            "duration": 7.287919759750366,
+            "duration": 4.334399700164795,
             "status": "passed"
           },
           "step_type": "then"
@@ -55,106 +55,69 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito6.feature:8",
+      "location": "../cotizacion.feature:8",
       "name": "Generar una cotizaci\u00f3n sin llenar todos los campos",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito6.feature:9",
+          "location": "../cotizacion.feature:9",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "steps.py:17"
           },
           "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
           "result": {
-            "duration": 4.485059022903442,
+            "duration": 4.736138105392456,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito6.feature:10",
+          "location": "../cotizacion.feature:10",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:54"
+            "location": "steps.py:67"
           },
           "name": "no lleno todos los campos y genero la cotizaci\u00f3n",
           "result": {
-            "duration": 0.32925987243652344,
+            "duration": 2.3446450233459473,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito6.feature:11",
+          "location": "../cotizacion.feature:11",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:62"
+            "location": "steps.py:83"
           },
           "name": "deber\u00eda ver un mensaje de error",
           "result": {
-            "duration": 8.265577793121338,
+            "duration": 12.389899253845215,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 75, in step_impl",
+              "  File \"steps.py\", line 96, in step_then_ver_mensaje_error",
               "    raise e",
-              "  File \"pruebaSteps.py\", line 71, in step_impl",
-              "    take_screenshot(context, 'despues_de_ver_mensaje_de_error')",
-              "  File \"pruebaSteps.py\", line 17, in take_screenshot",
-              "    context.driver.save_screenshot(screenshot_path)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 829, in save_screenshot",
-              "    return self.get_screenshot_as_file(filename)",
-              "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 805, in get_screenshot_as_file",
-              "    png = self.get_screenshot_as_png()",
-              "          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 839, in get_screenshot_as_png",
-              "    return b64decode(self.get_screenshot_as_base64().encode(\"ascii\"))",
-              "                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 850, in get_screenshot_as_base64",
-              "    return self.execute(Command.SCREENSHOT)[\"value\"]",
-              "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 354, in execute",
-              "    self.error_handler.check_response(response)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 228, in check_response",
-              "    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here",
-              "    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Por favor, complete todos los campos.",
-              "Message: unexpected alert open: {Alert text : Por favor, complete todos los campos.}",
-              "  (Session info: chrome=127.0.6533.89)",
-              "Stacktrace:",
-              "\tGetHandleVerifier [0x00448923+23283]",
-              "\t(No symbol) [0x0040E934]",
-              "\t(No symbol) [0x00340733]",
-              "\t(No symbol) [0x003BD2B5]",
-              "\t(No symbol) [0x003A41B6]",
-              "\t(No symbol) [0x00378017]",
-              "\t(No symbol) [0x0037890D]",
-              "\tGetHandleVerifier [0x0053A5E3+1013683]",
-              "\tGetHandleVerifier [0x00543E3C+1052684]",
-              "\tGetHandleVerifier [0x0053D4A4+1025652]",
-              "\tGetHandleVerifier [0x0046EA2B+179195]",
-              "\t(No symbol) [0x00416833]",
-              "\t(No symbol) [0x00413198]",
-              "\t(No symbol) [0x00413337]",
-              "\t(No symbol) [0x0040B4BE]",
-              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
-              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
-              "\tRtlClearBits [0x77BBC08F+191]",
+              "  File \"steps.py\", line 86, in step_then_ver_mensaje_error",
+              "    alert = WebDriverWait(context.driver, 10).until(",
+              "            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
               "",
               "",
               "Captured logging:",
               "INFO:WDM:====== WebDriver manager ======",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe] found in cache"
             ],
             "status": "failed"
           },
@@ -166,38 +129,95 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito6.feature:13",
+      "location": "../cotizacion.feature:13",
       "name": "Generar una cotizaci\u00f3n con extras",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito6.feature:14",
+          "location": "../cotizacion.feature:14",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "steps.py:17"
           },
           "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
           "result": {
-            "duration": 4.446987867355347,
+            "duration": 5.615762233734131,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito6.feature:15",
+          "location": "../cotizacion.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "steps.py:100"
+          },
           "name": "selecciono un servicio, una fecha, y extras y genero la cotizaci\u00f3n",
           "result": {
-            "duration": 0,
-            "status": "undefined"
+            "duration": 2.6074001789093018,
+            "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito6.feature:16",
+          "location": "../cotizacion.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "steps.py:130"
+          },
           "name": "deber\u00eda ver la cotizaci\u00f3n detallada con los extras",
+          "result": {
+            "duration": 24.70343542098999,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"steps.py\", line 145, in step_then_ver_cotizacion_detallada_extras",
+              "    raise e",
+              "  File \"steps.py\", line 133, in step_then_ver_cotizacion_detallada_extras",
+              "    quote_result = WebDriverWait(context.driver, 20).until(",
+              "                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              "Stacktrace:",
+              "\tGetHandleVerifier [0x010C8923+23283]",
+              "\t(No symbol) [0x0108E934]",
+              "\t(No symbol) [0x00FC0733]",
+              "\t(No symbol) [0x0100326F]",
+              "\t(No symbol) [0x010034AB]",
+              "\t(No symbol) [0x0103EE42]",
+              "\t(No symbol) [0x01024464]",
+              "\t(No symbol) [0x0103CB8D]",
+              "\t(No symbol) [0x010241B6]",
+              "\t(No symbol) [0x00FF8017]",
+              "\t(No symbol) [0x00FF890D]",
+              "\tGetHandleVerifier [0x011BA5F3+1013699]",
+              "\tGetHandleVerifier [0x011C3E4C+1052700]",
+              "\tGetHandleVerifier [0x011BD4B4+1025668]",
+              "\tGetHandleVerifier [0x010EEA2B+179195]",
+              "\t(No symbol) [0x01096833]",
+              "\t(No symbol) [0x01093198]",
+              "\t(No symbol) [0x01093337]",
+              "\t(No symbol) [0x0108B4BE]",
+              "\tBaseThreadInitThunk [0x760D7BA9+25]",
+              "\tRtlInitializeExceptionChain [0x7774C10B+107]",
+              "\tRtlClearBits [0x7774C08F+191]",
+              "",
+              "",
+              "Captured logging:",
+              "INFO:WDM:====== WebDriver manager ======",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Get LATEST chromedriver version for google-chrome",
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe] found in cache"
+            ],
+            "status": "failed"
+          },
           "step_type": "then"
         }
       ],
@@ -206,98 +226,69 @@
     },
     {
       "keyword": "Scenario",
-      "location": "Requisito6.feature:18",
+      "location": "../cotizacion.feature:18",
       "name": "Generar una cotizaci\u00f3n sin seleccionar servicio",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "Requisito6.feature:19",
+          "location": "../cotizacion.feature:19",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:19"
+            "location": "steps.py:17"
           },
           "name": "navego a la p\u00e1gina de cotizaci\u00f3n",
           "result": {
-            "duration": 4.443294048309326,
+            "duration": 5.094249963760376,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "Requisito6.feature:20",
+          "location": "../cotizacion.feature:20",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:111"
+            "location": "steps.py:149"
           },
           "name": "genero la cotizaci\u00f3n sin seleccionar servicio",
           "result": {
-            "duration": 0.2982628345489502,
+            "duration": 2.700902223587036,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "Requisito6.feature:21",
+          "location": "../cotizacion.feature:21",
           "match": {
             "arguments": [],
-            "location": "pruebaSteps.py:122"
+            "location": "steps.py:176"
           },
           "name": "deber\u00eda ver un mensaje de error por falta de servicio",
           "result": {
-            "duration": 7.294217586517334,
+            "duration": 14.429516077041626,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"pruebaSteps.py\", line 136, in step_impl",
+              "  File \"steps.py\", line 190, in step_then_ver_mensaje_error_falta_servicio",
               "    raise e",
-              "  File \"pruebaSteps.py\", line 129, in step_impl",
-              "    alert_text = alert.text",
-              "                 ^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\common\\alert.py\", line 58, in text",
-              "    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)[\"value\"]",
-              "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 354, in execute",
-              "    self.error_handler.check_response(response)",
-              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response",
-              "    raise exception_class(message, screen, stacktrace)",
-              "selenium.common.exceptions.NoAlertPresentException: Message: no such alert",
-              "  (Session info: chrome=127.0.6533.89)",
-              "Stacktrace:",
-              "\tGetHandleVerifier [0x00448923+23283]",
-              "\t(No symbol) [0x0040E934]",
-              "\t(No symbol) [0x003405AD]",
-              "\t(No symbol) [0x0032E688]",
-              "\t(No symbol) [0x0034F423]",
-              "\t(No symbol) [0x0035D7D2]",
-              "\t(No symbol) [0x003A44B4]",
-              "\t(No symbol) [0x0035D631]",
-              "\t(No symbol) [0x003A41B6]",
-              "\t(No symbol) [0x00378017]",
-              "\t(No symbol) [0x0037890D]",
-              "\tGetHandleVerifier [0x0053A5E3+1013683]",
-              "\tGetHandleVerifier [0x00543E3C+1052684]",
-              "\tGetHandleVerifier [0x0053D4A4+1025652]",
-              "\tGetHandleVerifier [0x0046EA2B+179195]",
-              "\t(No symbol) [0x00416833]",
-              "\t(No symbol) [0x00413198]",
-              "\t(No symbol) [0x00413337]",
-              "\t(No symbol) [0x0040B4BE]",
-              "\tBaseThreadInitThunk [0x75AD7BA9+25]",
-              "\tRtlInitializeExceptionChain [0x77BBC10B+107]",
-              "\tRtlClearBits [0x77BBC08F+191]",
+              "  File \"steps.py\", line 179, in step_then_ver_mensaje_error_falta_servicio",
+              "    alert = WebDriverWait(context.driver, 10).until(",
+              "            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+              "  File \"C:\\Users\\HP\\Documents\\ARCHIVOS_GIT\\PRUEBAS_CUCUMBER\\venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 105, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
               "",
               "",
               "Captured logging:",
               "INFO:WDM:====== WebDriver manager ======",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
               "INFO:WDM:Get LATEST chromedriver version for google-chrome",
-              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.99\\chromedriver-win32/chromedriver.exe] found in cache"
+              "INFO:WDM:Driver [C:\\Users\\HP\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe] found in cache"
             ],
             "status": "failed"
           },
@@ -309,7 +300,7 @@
     }
   ],
   "keyword": "Feature",
-  "location": "Requisito6.feature:1",
+  "location": "../cotizacion.feature:1",
   "name": "Cotizaci\u00f3n Automatica",
   "status": "failed",
   "tags": []

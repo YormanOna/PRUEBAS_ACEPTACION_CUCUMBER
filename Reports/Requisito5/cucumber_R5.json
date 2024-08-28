@@ -1,6 +1,6 @@
 [
   {
-    "uri": "Requisito5.feature",
+    "uri": "features/steps/Requisito5.feature",
     "id": "panel-de-administraci\u00f3n",
     "line": 1,
     "keyword": "Feature",
@@ -8,11 +8,11 @@
     "description": "",
     "elements": [
       {
-        "id": "ver-el-gestor-de-cocteles",
+        "id": "ver-el-gestor-de-paquetes",
         "line": 3,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Ver el gestor de cocteles",
+        "name": "Ver el gestor de paquetes",
         "description": "",
         "steps": [
           {
@@ -22,27 +22,27 @@
             "name": "navego al panel de administraci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.822600603103638
+              "duration": 5.000625371932983
             }
           },
           {
             "arguments": [],
             "keyword": "When",
             "line": 5,
-            "name": "selecciono la pesta\u00f1a de cocteles",
+            "name": "selecciono la pesta\u00f1a de paquetes",
             "result": {
               "status": "passed",
-              "duration": 0.2705974578857422
+              "duration": 0.31882333755493164
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
             "line": 6,
-            "name": "deber\u00eda ver el gestor de cocteles",
+            "name": "deber\u00eda ver el gestor de paquetes",
             "result": {
               "status": "passed",
-              "duration": 2.3382680416107178
+              "duration": 2.3790135383605957
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "navego al panel de administraci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.7200846672058105
+              "duration": 4.607439279556274
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "selecciono la pesta\u00f1a de cocteles",
             "result": {
               "status": "passed",
-              "duration": 0.25423598289489746
+              "duration": 0.295166015625
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "agrego un nuevo coctel",
             "result": {
               "status": "failed",
-              "duration": 0.7465004920959473
+              "duration": 10.82990312576294
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "navego al panel de administraci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 4.877546548843384
+              "duration": 5.424097537994385
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "selecciono la pesta\u00f1a de cocteles",
             "result": {
               "status": "passed",
-              "duration": 0.2656841278076172
+              "duration": 0.23241281509399414
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "elimino un coctel",
             "result": {
               "status": "passed",
-              "duration": 0.7768473625183105
+              "duration": 1.200239658355713
             }
           },
           {
@@ -142,47 +142,47 @@
             "name": "deber\u00eda ver el coctel eliminado de la lista",
             "result": {
               "status": "failed",
-              "duration": 2.3167128562927246
+              "duration": 2.3020071983337402
             }
           }
         ]
       },
       {
-        "id": "ver-el-gestor-de-paquetes",
-        "line": 20,
+        "id": "ver-el-gestor-de-cocteles",
+        "line": 21,
         "type": "scenario",
         "keyword": "Scenario",
-        "name": "Ver el gestor de paquetes",
+        "name": "Ver el gestor de cocteles",
         "description": "",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 21,
+            "line": 22,
             "name": "navego al panel de administraci\u00f3n",
             "result": {
               "status": "passed",
-              "duration": 5.56755805015564
+              "duration": 5.821456432342529
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 22,
-            "name": "selecciono la pesta\u00f1a de paquetes",
+            "line": 23,
+            "name": "selecciono la pesta\u00f1a de cocteles",
             "result": {
               "status": "passed",
-              "duration": 0.30643439292907715
+              "duration": 0.2061777114868164
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 23,
-            "name": "deber\u00eda ver el gestor de paquetes",
+            "line": 24,
+            "name": "deber\u00eda ver el gestor de cocteles",
             "result": {
-              "status": "failed",
-              "duration": 22.600491762161255
+              "status": "passed",
+              "duration": 2.2462949752807617
             }
           }
         ]
